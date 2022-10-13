@@ -6,4 +6,76 @@ body,
 html {
     padding: 0;
     margin: 0;
+    background-color: gainsboro;
+}
+
+article {
+    max-width: 20%;
+    background-color: white;
+    padding: 1em;
+}
+
+article h3 {
+    border-bottom: 0.01em grey solid;
+}
+
+article p {
+    border-bottom: 0.01em lightgray solid;
+    padding-left: 1em;
+}
+
+article button {
+    display: flex;
+    align-self: center;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.border-box {
+    border: 0.01em lightgray solid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 1em;
+}
+
+#wrapper {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+header h1 {
+    background-image: url(/bike_imgs/logo.png);
+    background-repeat: no-repeat;
+    width: 288px;
+    height: 54px;
+    text-indent: -99999px;
+}
+
+.bikeshop main {
+    grid-column: 1/-1;
+
+}
+
+/* .bike > img + section > h3 */
+
+.bike {
+    display: grid;
+
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+    header {
+        grid-column: 1/-1;
+    }
+
+    .bikeshop main {
+        grid-column: 2/-1;
+    }
+
 }
