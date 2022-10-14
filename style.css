@@ -9,6 +9,16 @@ html {
     background-color: gainsboro;
 }
 
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    margin: 2rem;
+}
+
 article {
     max-width: 100%;
     background-color: white;
