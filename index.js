@@ -23,10 +23,21 @@ function showSingleBike(bike) {
   //put the content into it
   clone.querySelector("h3").textContent = bike.title.rendered;
   clone.querySelector(".price span").textContent = bike.price;
+  clone.querySelector(".stock span").textContent = bike.in_stock;
   //append it to the dom
   clone.querySelector("img").src =
     bike._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url;
+  clone.querySelector("h4").textContent = bike._embedded["wp:term"][0][0].name;
   //console.log(wp_embedded.wp["featuredmedia"].0.media_details.sizes.medium.source_url);
+  if (bike.colours[0]) {
+    clone.querySelector(".colour-list").textContent = "";
+    bike.colours.forEach((colour) => {
+      const spanEl = document.createElement("span");
+      spanEl.style.background = colour;
+      console.log(spanEl);
+      clone.querySelector(".colour-list").appendChild(spanEl);
+    });
+  }
   const parent = document.querySelector("main");
   parent.appendChild(clone);
 }

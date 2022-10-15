@@ -8,37 +8,40 @@
     <title>Bike stock</title>
   </head>
   <body class="bikeshop">
-    <div id="wrapper">
-      <header>
-        <a href="index.html"><h1>bike shop</h1></a>
-        <nav>
-          <ul>
-            <li>BRANDS WE CARRY</li>
-            <li>LINUS</li>
-            <li>BROMPTON</li>
-            <li>CHRISTIANIA</li>
-            <li>STATE</li>
-          </ul>
-        </nav>
-      </header>
+    <!-- <div id="wrapper"> -->
+    <header>
+      <a href="index.html"><h1>bike shop</h1></a>
+      <nav>
+        <ul>
+          <li>BRANDS WE CARRY -</li>
+          <li>LINUS /</li>
+          <li>BROMPTON /</li>
+          <li>CHRISTIANIA /</li>
+          <li>STATE /</li>
+        </ul>
+      </nav>
+    </header>
 
-      <main>
-        <h2>bike style?</h2>
-        <template>
-          <article class="bike">
-            <img src="bike_imgs/cardinal.png" alt="bike" />
-            <section class="bike-section">
-              <h4>model</h4>
-              <h3>bike name</h3>
-              <div class="border-box">
-                <p class="price">price <span>123</span></p>
-                <p>color</p>
-                <button>buy now</button>
+    <main>
+      <template>
+        <article class="bike">
+          <img src="bike_imgs/cardinal.png" alt="bike" />
+          <section class="bike-section">
+            <h4>MODEL</h4>
+            <h3>bike name</h3>
+            <div class="border-box">
+              <p class="price">Price: $<span>123</span></p>
+              <div class="colour">
+                Colours:
+                <div class="colour-list"></div>
               </div>
-            </section>
-          </article>
-        </template>
-        <!-- <article class="bike">
+              <p class="stock">In Stock: <span>1</span></p>
+              <button>buy now</button>
+            </div>
+          </section>
+        </article>
+      </template>
+      <!-- <article class="bike">
           <img src="bike_imgs/cardinal.png" alt="bike" />
           <section class="bike-section">
             <h4>model</h4>
@@ -62,8 +65,8 @@
             </div>
           </section>
         </article> -->
-      </main>
-    </div>
+    </main>
+    <!-- </div> -->
     <script src="index.js"></script>
   </body>
 </html>

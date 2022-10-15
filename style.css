@@ -6,7 +6,8 @@ body,
 html {
     padding: 0;
     margin: 0;
-    background-color: gainsboro;
+    background-color: rgb(236, 236, 236);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 ul {
@@ -17,28 +18,64 @@ ul {
 li {
     list-style: none;
     margin: 1rem;
+    color: darkred;
+}
+
+main {
+    padding: 5rem;
 }
 
 article {
     max-width: 100%;
     background-color: white;
     padding: 1em;
+    margin-bottom: 5rem;
+}
+
+article h4 {
+    color: grey;
+    font-weight: bolder;
 }
 
 article h3 {
-    border-bottom: 0.01em grey solid;
+    color: grey;
+    font-size: 1.5rem;
 }
+
 
 article p {
     border-bottom: 0.01em lightgray solid;
     padding-left: 1em;
+    margin: 0.5em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-style: italic;
+}
+
+article .stock {
+    border-top: 0.01em lightgray solid;
+    padding-left: 1em;
+    margin: 0.5em;
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 article button {
     display: flex;
-    align-self: center;
+    align-content: center;
+    justify-content: center;
     margin: auto;
     margin-bottom: 1em;
+    background-color: white;
+    color: darkred;
+    border: 2px solid darkred;
+    width: 100px;
+
+    padding: 0.5em;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(77, 12, 12, 0.24), 0 17px 50px 0 rgba(92, 20, 20, 0.19);
 }
 
 .border-box {
@@ -51,11 +88,6 @@ img {
     padding-bottom: 1em;
 }
 
-#wrapper {
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: 200px 1fr;
-}
 
 header h1 {
     background-image: url(/bike_imgs/logo.png);
@@ -63,6 +95,8 @@ header h1 {
     width: 288px;
     height: 54px;
     text-indent: -99999px;
+    margin-left: 4rem;
+
 }
 
 .bikeshop main {
@@ -87,6 +121,25 @@ header h1 {
 
 
 
+.colour {
+    display: flex;
+    padding-left: 1.5em;
+    font-style: italic;
+}
+
+.colour-list {
+    display: flex;
+}
+
+.colour-list span {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50px;
+    border: 1px solid var(--black);
+    margin: 0.2em;
+}
+
 @media only screen and (min-width: 1000px) {
     header {
         grid-column: 1/-1;
@@ -96,4 +149,18 @@ header h1 {
         grid-column: 2/-1;
     }
 
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    li {
+        list-style: none;
+        padding: 1em;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--red);
+    }
 }
