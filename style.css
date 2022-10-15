@@ -89,13 +89,11 @@ img {
 }
 
 
-header h1 {
-    background-image: url(/bike_imgs/logo.png);
+header img {
     background-repeat: no-repeat;
-    width: 288px;
-    height: 54px;
-    text-indent: -99999px;
+    max-width: 100%;
     margin-left: 4rem;
+    margin-top: 1rem;
 
 }
 
